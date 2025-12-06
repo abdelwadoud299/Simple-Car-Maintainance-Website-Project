@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التواصل معنا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-body">
+
+    <header class="flex between">
+        <img src="images/لوجو تصليح.png" alt="Logo" style="width: 90px;">
+        <nav>
+            <a href="index.html">الصفحة الرئيسية</a>
+            <a href="services.html">الخدمات</a>
+            <a href="contact.html" class="active">التواصل معنا</a>
+        </nav>
+    </header>
+
+    <section class="text-center" style="max-width: 800px; padding-bottom: 0;">
+        <article style="background: white; margin-bottom: 0;">
+            <h2 style="margin-bottom: 2rem;">تواصل معنا</h2>
+            <img src="images/36i.PNG" alt="Contact Us" style="border-radius: var(--radius); margin-bottom: 1rem;">
+            <p style="color: var(--text-light);">نحن هنا لخدمتك! املأ الاستمارة وسنتواصل معك في أقرب وقت</p>
+        </article>
+    </section>
+
+    <section style="max-width: 800px; padding-top: 2rem;">
+        <article style="background: white;">
+            <h2 style="text-align: right; margin-bottom: 1rem;">أرسل لنا رسالة</h2>
+            <form>
+                <label>
+                    الاسم الكامل
+                    <input type="text" required>
+                </label>
+
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <label>
+                        البريد الإلكتروني
+                        <input type="email" placeholder="example@gmail.com" required>
+                    </label>
+                    <label>
+                        رقم الهاتف
+                        <input type="tel" required>
+                    </label>
+                </div>
+
+                <label>
+                    رسالتك
+                    <textarea placeholder="كيف يمكننا مساعدتك؟" style="height: 120px;" required></textarea>
+                </label>
+
+                <button type="submit" class="btn primary" style="width: 100%;">إرسال الرسالة</button>
+            </form>
+
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                <h3 class="text-center text-primary" style="margin-bottom: 2rem;">معلومات التواصل</h3>
+                <div class="grid text-center">
+                    <div>
+                        <h4 class="text-accent">📍 العنوان</h4>
+                        <p>شارع النصر، مدينة نصر<br>القاهرة</p>
+                    </div>
+                    <div>
+                        <h4 class="text-accent">📞 الهاتف</h4>
+                        <p>01034659634</p>
+                    </div>
+                    <div>
+                        <h4 class="text-accent">📧 البريد</h4>
+                        <p>info@carservice.com</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+</body>
+
+</html>

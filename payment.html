@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدفع</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gradient">
+
+    <header class="transparent">
+        <img src="images/لوجو تصليح.png" alt="Logo" style="width: 90px;">
+        <nav>
+            <a href="services.html">الخدمات</a>
+            <a href="index.html">الصفحة الرئيسية</a>
+            <a href="contact.html">التواصل معنا</a>
+        </nav>
+    </header>
+
+    <section class="text-center" style="padding-bottom: 0;">
+        <h1 style="font-size: 2rem; margin-bottom: 0.5rem; font-weight: 700;">💳 إتمام عملية الدفع</h1>
+        <p style="opacity: 0.9;">اختر الخدمة وأكمل بيانات الدفع</p>
+    </section>
+
+    <section style="max-width: 900px; padding-bottom: 4rem;">
+        <article class="bg-white" style="text-align: right;">
+            <!-- Service Selection using labels which are semantic form elements -->
+            <h2>اختر الخدمات المطلوبة</h2>
+            <div style="margin-bottom: 2rem;">
+                <label
+                    style="display: flex; justify-content: space-between; padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-main);">
+                    <div style="display: flex; align-items: center;">
+                        <input type="checkbox" style="width: 20px; height: 20px; margin-left: 10px; margin-bottom: 0;">
+                        <span>العناية بالمكيف</span>
+                    </div>
+                    <span style="color: var(--accent); font-weight: bold;">300 جنيه</span>
+                </label>
+                <label
+                    style="display: flex; justify-content: space-between; padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-main);">
+                    <div style="display: flex; align-items: center;">
+                        <input type="checkbox" style="width: 20px; height: 20px; margin-left: 10px; margin-bottom: 0;">
+                        <span>صيانة البخاخات</span>
+                    </div>
+                    <span style="color: var(--accent); font-weight: bold;">350 جنيه</span>
+                </label>
+                <label
+                    style="display: flex; justify-content: space-between; padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-main);">
+                    <div style="display: flex; align-items: center;">
+                        <input type="checkbox" style="width: 20px; height: 20px; margin-left: 10px; margin-bottom: 0;">
+                        <span>تنظيف المحرك</span>
+                    </div>
+                    <span style="color: var(--accent); font-weight: bold;">400 جنيه</span>
+                </label>
+            </div>
+
+            <!-- Order Summary -->
+            <div
+                style="background: var(--bg-body); padding: 1.5rem; border-radius: var(--radius); margin-bottom: 2rem;">
+                <h3 class="text-primary" style="margin-bottom: 1rem;">ملخص الطلب</h3>
+                <div class="flex between"
+                    style="margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
+                    <span>المجموع الفرعي:</span>
+                    <span>0 جنيه</span>
+                </div>
+                <div class="flex between"
+                    style="margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
+                    <span>الضريبة (14%):</span>
+                    <span>0 جنيه</span>
+                </div>
+                <div class="flex between" style="font-weight: 700; color: var(--primary); font-size: 1.2rem;">
+                    <span>المجموع الكلي:</span>
+                    <span>0 جنيه</span>
+                </div>
+            </div>
+
+            <!-- Payment Methods -->
+            <h2>طريقة الدفع</h2>
+            <div class="grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 2rem;">
+                <label
+                    style="border: 2px solid var(--accent); border-radius: var(--radius); padding: 1rem; text-align: center; cursor: pointer;">
+                    <input type="radio" name="payment" checked
+                        style="margin-bottom: 0.5rem; display: inline-block; width: auto;">
+                    <div>💳 بطاقة ائتمان</div>
+                </label>
+                <label
+                    style="border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; text-align: center; cursor: pointer;">
+                    <input type="radio" name="payment"
+                        style="margin-bottom: 0.5rem; display: inline-block; width: auto;">
+                    <div>💵 نقداً</div>
+                </label>
+                <label
+                    style="border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; text-align: center; cursor: pointer;">
+                    <input type="radio" name="payment"
+                        style="margin-bottom: 0.5rem; display: inline-block; width: auto;">
+                    <div>📱 محفظة</div>
+                </label>
+            </div>
+
+            <!-- Semantic Form -->
+            <form>
+                <label>
+                    اسم حامل البطاقة
+                    <input type="text" placeholder="الاسم كما في البطاقة">
+                </label>
+                <label>
+                    رقم البطاقة
+                    <input type="text" placeholder="0000 0000 0000 0000">
+                </label>
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                    <label>
+                        تاريخ الانتهاء
+                        <input type="text" placeholder="MM/YY">
+                    </label>
+                    <label>
+                        CVC
+                        <input type="text" placeholder="123">
+                    </label>
+                </div>
+
+                <div class="flex" style="margin-top: 2rem;">
+                    <a href="services.html" class="btn outline"
+                        style="color: var(--text-main); border-color: var(--border);">← العودة</a>
+                    <button type="submit" class="btn primary" style="flex: 1;">إتمام الدفع ✓</button>
+                </div>
+            </form>
+        </article>
+    </section>
+
+</body>
+
+</html>
